@@ -1,28 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navigate, Route, Routes } from "react-router-dom";
+import Container from '@mui/material/Container';
+
+import { AddTrainingView } from './views/AddTrainingView';
+import { Header } from './components/Header/Header';
 
 
-function App() {
+export const App = () => {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Navigate to="/training/add-form" replace />} />
+        <Route path="/training/add-form" element={<AddTrainingView />} />
+      </Routes>
+    </Container>
   );
 }
 
-export default App;
+
