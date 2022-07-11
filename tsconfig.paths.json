@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "types": [
+        "../training-diary-back/types"
+      ]
+    }
+  }
+}
