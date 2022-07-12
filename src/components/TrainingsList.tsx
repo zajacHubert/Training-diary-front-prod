@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SingleTraining, Trainings } from 'types';
+import { Trainings } from 'types';
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { Table, Typography } from '@mui/material';
@@ -113,7 +113,7 @@ export const TrainingsList = () => {
                     </TableHead>
                     <TableBody>
                         {trainings.map((row, i: number) => (
-                            <StyledTableRow>
+                            <StyledTableRow key={i}>
                                 <StyledTableCell component="th" scope="row">
                                     {i + 1}
                                 </StyledTableCell>

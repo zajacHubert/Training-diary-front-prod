@@ -34,7 +34,7 @@ export const AddTrainingForm = () => {
         ))
         console.log(newArr);
 
-        Promise.all(
+        await Promise.all(
             newArr.map(async item => {
                 await fetch(`http://localhost:3001/training`, {
                     method: 'POST',

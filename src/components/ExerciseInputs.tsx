@@ -10,7 +10,6 @@ interface Props {
     changeInputHanlder: (index: number, event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
     removeFieldHandler: (index: number) => void;
     addFieldHandler: () => void;
-
 }
 
 export const ExerciseInputs = ({ inputFields, changeInputHanlder, removeFieldHandler, addFieldHandler }: Props) => {

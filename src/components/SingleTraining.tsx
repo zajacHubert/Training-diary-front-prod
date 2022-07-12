@@ -53,12 +53,7 @@ export const SingleTraining = () => {
     }
 
     return (
-        <Paper
-            sx={{
-                padding: 4,
-                margin: 3,
-            }}
-        >
+        <>
             <Typography
                 variant="h3"
                 align='center'
@@ -92,6 +87,6 @@ export const SingleTraining = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </Paper>
+        </>
     )
 }
