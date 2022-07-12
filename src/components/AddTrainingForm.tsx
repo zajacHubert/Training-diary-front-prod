@@ -9,7 +9,7 @@ import { ExerciseInputs } from "./ExerciseInputs";
 type T = keyof SimpleExerciseToAddToTraining;
 
 export const AddTrainingForm = () => {
-    const [trainingName, setTrainingName] = useState('');
+    const [trainingName, setTrainingName] = useState<string>('');
     const [trainingDate, setTrainingDate] = useState(`${new Date().toISOString().slice(0, 10)}`)
     const [inputFields, setInputFields] = useState<SimpleExerciseToAddToTraining[]>([
         {
@@ -62,7 +62,6 @@ export const AddTrainingForm = () => {
             exerciseName: '',
             reps: '',
             weights: '',
-
         }])
     }
 
