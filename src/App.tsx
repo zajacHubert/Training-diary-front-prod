@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Container from '@mui/material/Container';
 
 import { AddTrainingView } from './views/AddTrainingView';
-import { Header } from './components/Header/Header';
+import { Header } from './components/Header';
 
 
 export const App = () => {
