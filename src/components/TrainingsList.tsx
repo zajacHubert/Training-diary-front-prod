@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from './Spinner';
 import { Trainings } from 'types';
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
@@ -63,7 +64,7 @@ export const TrainingsList = () => {
     }
 
     if (trainings === null) {
-        return <p>Loading</p>
+        return <Spinner />
     }
 
     if (trainings.length === 0) {
